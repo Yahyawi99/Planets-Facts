@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Facts</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="planet.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- *********************************** -->
+      <!-- Head -->
+      <header>
+        <h2 class="title">THE PLANETS</h2>
+        <div class="humbergurIcon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17">
+            <g fill="#FFF" fill-rule="evenodd">
+              <path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z" />
+            </g>
+          </svg>
+        </div>
+        <ol class="list">
+          <li data-name="Mercury">
+            <hr style="--hr-width: 85; background: var(--lmercury)" />
+            <div class="circle" style="background: var(--lmercury)"></div>
+            <span>MERCURY</span>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="8"
+            >
+              <path fill="none" stroke="#000" opacity=".4" d="M1 0l4 4-4 4" />
+            </svg>
+          </li>
+          <li data-name="Venus">
+            <hr style="--hr-width: 62; background: var(--lvenus)" />
+            <div class="circle" style="background: var(--lvenus)"></div>
+            <span>VENUS</span>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="8"
+            >
+              <path fill="none" stroke="#000" opacity=".4" d="M1 0l4 4-4 4" />
+            </svg>
+          </li>
+          <li data-name="Earth">
+            <hr style="--hr-width: 60; background: var(--learth)" />
+            <div class="circle" style="background: var(--learth)"></div>
+            <span>EARTH</span>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="8"
+            >
+              <path fill="none" stroke="#000" opacity=".4" d="M1 0l4 4-4 4" />
+            </svg>
+          </li>
+          <li data-name="Mars">
+            <hr style="--hr-width: 52; background: var(--lmars)" />
+            <div class="circle" style="background: var(--lmars)"></div>
+            <span>MARS</span>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="8"
+            >
+              <path fill="none" stroke="#000" opacity=".4" d="M1 0l4 4-4 4" />
+            </svg>
+          </li>
+          <li data-name="Jupiter">
+            <hr style="--hr-width: 75; background: var(--ljupiter)" />
+            <div class="circle" style="background: var(--ljupiter)"></div>
+            <span>JUPITER</span>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="8"
+            >
+              <path fill="none" stroke="#000" opacity=".4" d="M1 0l4 4-4 4" />
+            </svg>
+          </li>
+          <li data-name="Saturn">
+            <hr style="--hr-width: 77; background: var(--lsaturn)" />
+            <div class="circle" style="background: var(--lsaturn)"></div>
+            <span>SATURN</span>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="8"
+            >
+              <path fill="none" stroke="#000" opacity=".4" d="M1 0l4 4-4 4" />
+            </svg>
+          </li>
+          <li data-name="Uranus">
+            <hr style="--hr-width: 75; background: var(--luranus)" />
+            <div class="circle" style="background: var(--luranus)"></div>
+            <span>URANUS</span>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="8"
+            >
+              <path fill="none" stroke="#000" opacity=".4" d="M1 0l4 4-4 4" />
+            </svg>
+          </li>
+          <li data-name="Neptune">
+            <hr style="--hr-width: 82; background: var(--lneptune)" />
+            <div class="circle" style="background: var(--lneptune)"></div>
+            <span>NEPTUN</span>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="8"
+            >
+              <path fill="none" stroke="#000" opacity=".4" d="M1 0l4 4-4 4" />
+            </svg>
+          </li>
+        </ol>
+        <!-- buttons -->
+        <div class="btn-container-two">
+          <button class="btn clicked" data-name="overview">OVERVIEW</button>
+          <button class="btn" data-name="structure">INTERNAL STRUCTURE</button>
+          <button class="btn" data-name="geology">SURFACE GEOLOGY</button>
+        </div>
+      </header>
+
+      <!-- *********************************** -->
+      <!-- Body -->
+      <main>
+        <div class="image-container">
+          <img class="image" src="assets/planet-earth.svg" alt="planet-image" />
+          <img
+            class="surface-image"
+            src="assets/geology-earth.png"
+            alt="planet-image"
+          />
+        </div>
+
+        <!-- Description & Button -->
+        <div class="planet-data">
+          <!-- Description -->
+          <div class="description">
+            <h1 class="planet-name">Earth</h1>
+            <p class="text">
+              Third planet from the Sun and the only known planet to harbor
+              life. About 29.2% of Earth's surface is land with remaining 70.8%
+              is covered with water. Earth's distance from the Sun, physical
+              properties and geological history have allowed life to evolve and
+              thrive.
+            </p>
+            <p class="source">
+              Source : <a href="" target="_blank" id="link">Wikipedia</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+                <path
+                  fill="#FFF"
+                  d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z"
+                  opacity=".5"
+                />
+              </svg>
+            </p>
+          </div>
+
+          <!-- buttons -->
+          <div class="btn-container">
+            <button class="btn clicked-btn" data-name="overview">
+              <span>01</span> OVERVIEW
+            </button>
+            <button class="btn" data-name="structure">
+              <span>02</span> INTERNAL STRUCTURE
+            </button>
+            <button class="btn" data-name="geology">
+              <span>03</span> SURFACE GEOLOGY
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!-- *********************************** -->
+      <!-- Footer -->
+      <footer>
+        <div class="rotation">
+          <p>ROTATION TIME</p>
+          <h3><span class="value" data-id="rotation">0.99 Days</span></h3>
+        </div>
+
+        <div class="revolution">
+          <p>REVOLUTION TIME</p>
+          <h3><span class="value" data-id="revolution">325.26 Days</span></h3>
+        </div>
+
+        <div class="radius">
+          <p>RADIUS</p>
+          <h3><span class="value" data-id="radius">6,371 KM</span></h3>
+        </div>
+
+        <div class="temp">
+          <p>AVERAGE TEMP</p>
+          <h3><span class="value" data-id="temperature">16°C</span></h3>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="planet.js"></script>
+  </body>
+</html>
