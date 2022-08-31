@@ -24,6 +24,7 @@
   --neptune: #2d68f0;
   --selected: white;
 }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -59,14 +60,17 @@ header {
   border-bottom: 1px solid var(--learth);
   position: relative;
 }
+
 header .humbergurIcon {
   display: none;
 }
+
 header .title {
   width: 40%;
   letter-spacing: -4px;
   word-spacing: 8px;
 }
+
 header .list {
   width: 60%;
   list-style: none;
@@ -74,14 +78,17 @@ header .list {
   justify-content: space-around;
   align-items: center;
 }
+
 .list li {
   cursor: pointer;
   margin: 0px 8px;
   border-bottom: none;
 }
+
 .list li:hover hr {
   transform: scale(1);
 }
+
 hr {
   width: calc(var(--hr-width) * 1px);
   height: 3px;
@@ -91,14 +98,17 @@ hr {
   transform: scaleX(0);
   transition: 0.25s;
 }
+
 .chevron {
   transform: scale(1.8);
   display: none;
 }
+
 .chevron path {
   stroke: var(--bd-bottom);
   opacity: 1;
 }
+
 .circle {
   width: 20px;
   height: 20px;
@@ -106,6 +116,7 @@ hr {
   border-radius: 50%;
   display: none;
 }
+
 /************************/
 /* BODY */
 /************************/
@@ -116,6 +127,7 @@ main {
   margin-top: 60px;
   justify-content: center;
 }
+
 /* img */
 .image-container {
   width: 50%;
@@ -123,9 +135,11 @@ main {
   justify-content: center;
   position: relative;
 }
+
 .image-container .image {
   transform: scale(0.7);
 }
+
 .image-container .surface-image {
   position: absolute;
   bottom: 0%;
@@ -133,17 +147,20 @@ main {
   transform: scale(0.7) rotate(70deg);
   display: none;
 }
+
 /* description */
 .planet-data {
   width: 45%;
   color: var(--selected);
 }
+
 .planet-data .description .planet-name {
   transform: scaleY(1.6);
   padding-top: 10px;
   margin-bottom: 50px;
   font-weight: 800;
 }
+
 .planet-data .description .text {
   width: 70%;
   font-size: 0.8rem;
@@ -152,10 +169,12 @@ main {
   margin-bottom: 50px;
   opacity: 0.8;
 }
+
 .planet-data .description .source {
   opacity: 0.8;
   margin-bottom: 25px;
 }
+
 .description .source a {
   color: var(--selected);
   opacity: 0.8;
@@ -165,10 +184,12 @@ main {
 .btn-container-two {
   display: none;
 }
+
 .btn-container {
   display: flex;
   flex-direction: column;
 }
+
 .btn-container .btn,
 .btn-container-two .btn {
   height: 50px;
@@ -183,11 +204,13 @@ main {
   padding-left: 30px;
   cursor: pointer;
 }
+
 .btn-container .btn span {
   margin-right: 20px;
   opacity: 0.7;
   letter-spacing: 2px;
 }
+
 .btn-container .btn:hover {
   background: rgba(255, 255, 255, 0.15);
 }
@@ -202,6 +225,7 @@ footer {
   color: var(--selected);
   margin-top: 45px;
 }
+
 footer div {
   width: 170px;
   border: 1px solid var(--learth);
@@ -211,6 +235,7 @@ footer div {
   flex-direction: column;
   justify-content: center;
 }
+
 footer div p {
   font-size: 0.6rem;
   margin-bottom: 15px;
@@ -223,10 +248,11 @@ footer div p {
 /************************/
 
 /* For mobile phones */
-@media all and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   body {
     height: 100%;
   }
+
   #wrapper {
     min-width: 350px;
     transform: scale(1);
@@ -240,17 +266,21 @@ footer div p {
     padding: 0px;
     padding-top: 15px;
   }
+
   header .title {
     padding-left: 10px;
   }
+
   header .humbergurIcon {
     width: 50%;
     display: flex;
     padding-left: 40%;
   }
+
   .humbergurIcon svg {
     min-width: 19px;
   }
+
   header .title {
     width: 50%;
   }
@@ -262,6 +292,7 @@ footer div p {
     flex-direction: column;
     margin-top: 10px;
   }
+
   .list li {
     border-bottom: 1px solid var(--learth);
     padding-bottom: 10px;
@@ -270,17 +301,21 @@ footer div p {
     align-items: center;
     grid-template-columns: repeat(10, 1fr);
   }
+
   .list li hr {
     display: none;
   }
+
   .list li .circle {
     display: flex;
     grid-column: 1 / 2;
   }
+
   .list li span {
     grid-column: 2 / span 8;
     margin-left: 10px;
   }
+
   .chevron {
     display: flex;
     margin-left: 20px;
@@ -291,21 +326,26 @@ footer div p {
     flex-direction: column;
     margin-top: 0%;
   }
+
   .image-container {
     width: 100%;
   }
+
   .image-container .image {
     transform: scale(0.5);
   }
+
   .image-container .surface-image {
     bottom: -20%;
     left: -10%;
     transform: scale(0.4) rotate(50deg);
   }
+
   .planet-data {
     width: 100%;
     text-align: center;
   }
+
   .planet-data .description .text {
     width: 100%;
     margin-bottom: 30px;
@@ -315,6 +355,7 @@ footer div p {
   .btn-container {
     display: none;
   }
+
   .btn-container-two {
     width: 100%;
     display: flex;
@@ -322,12 +363,14 @@ footer div p {
     padding-top: 20px;
     border-top: 1px solid var(--earth);
   }
+
   .btn-container-two .btn {
     border: none;
     margin-bottom: 0px;
     padding-left: 0;
     justify-content: center;
   }
+
   .btn-container-two .btn:nth-child(1) {
     border-bottom: 4px solid var(--earth);
   }
@@ -337,6 +380,7 @@ footer div p {
     flex-direction: column;
     align-items: center;
   }
+
   footer div {
     width: 85%;
     height: 50px;
@@ -347,6 +391,7 @@ footer div p {
     justify-content: space-between;
     margin-bottom: 20px;
   }
+
   footer div p {
     font-size: 0.8rem;
     margin-bottom: 0px;
@@ -354,10 +399,11 @@ footer div p {
 }
 
 /* For Tablets */
-@media all and (min-width: 500px) and (max-width: 1000px) {
+@media all and (min-width: 700px) and (max-width: 1000px) {
   body {
     height: 100%;
   }
+
   #wrapper {
     transform: scale(1);
     margin-top: 0%;
@@ -368,17 +414,21 @@ footer div p {
     width: 100%;
     flex-direction: column;
   }
+
   header .title {
     width: 100%;
     text-align: center;
     margin-bottom: 15px;
   }
+
   header .list {
-    width: 100%;
+    width: fit-content;
+    display: flex;
     min-height: 65px;
     flex-wrap: wrap;
     align-items: center;
   }
+
   .list li hr {
     display: none;
   }
@@ -388,29 +438,36 @@ footer div p {
     flex-direction: column;
     align-items: center;
   }
+
   .image-container {
     width: 100%;
   }
+
   .image-container .image {
     transform: scale(0.9);
   }
+
   .image-container .surface-image {
     left: 5%;
   }
+
   .planet-data {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .planet-data .description {
     width: 50%;
   }
+
   .planet-data .btn-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
+
   .planet-data .btn-container .btn {
     width: 200px;
   }
@@ -419,10 +476,12 @@ footer div p {
   footer {
     flex-wrap: wrap;
   }
+
   footer div {
     margin-bottom: 10px;
   }
 }
+
 @media all and (min-height: 1200px) {
   #wrapper {
     transform: scale(1);
@@ -438,16 +497,20 @@ footer div p {
 .list .clicked-planet {
   pointer-events: none;
 }
+
 .list .clicked-planet hr {
   transform: scale(1);
 }
+
 .planet-data .btn-container .clicked-btn {
   pointer-events: none;
   background-color: var(--earth);
 }
+
 .add-border {
   border-top: none;
 }
+
 header .hideList {
   display: block;
 }
